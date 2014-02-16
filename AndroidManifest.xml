@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+  package="com.explovia.mapdemo"
+  android:versionCode="6"
+  android:versionName="2.7.0">
+  <!-- Copied from Google Maps Library/AndroidManifest.xml. -->
+  <uses-sdk
+    android:minSdkVersion="14"
+    android:targetSdkVersion="19"/>
+  <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+  <uses-permission android:name="android.permission.INTERNET"/>
+  <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+  <!-- External storage for caching. -->
+  <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+  <!-- My Location -->
+  <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+  <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+  <!-- Maps API needs OpenGL ES 2.0. -->
+  <uses-feature
+    android:glEsVersion="0x00020000"
+    android:required="true"/>
+  <!-- End of copy. -->
+  <application
+    android:icon="@drawable/ic_launcher"
+    android:label="@string/demo_title" 
+    android:hardwareAccelerated="true">
+    <!-- ** You need to replace the key below with your own key. **
+         The example key below will not be accepted because it is not linked to the
+         certificate which you will use to sign this application.
+         See: https://developers.google.com/maps/documentation/android/start
+         for instructions on how to get your own key. -->
+    <meta-data android:name="com.google.android.maps.v2.API_KEY"
+    android:value="AIzaSyCfOb9qWSfMDCf-uENTo0ylOIlXHZkt5ws"/>
+    <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+    <activity android:name="com.explovia.mapdemo.MainActivity">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN"/>
+        <category android:name="android.intent.category.LAUNCHER"/>
+      </intent-filter>
+    </activity>
+    <activity
+      android:name="com.explovia.mapdemo.LegalInfoActivity"
+      android:label="@string/legal_info"/>
+    <activity
+      android:name="com.explovia.mapdemo.BasicMapDemoActivity"
+      android:label="@string/basic_map_demo_label"/>
+    <activity
+      android:name="com.explovia.mapdemo.CameraDemoActivity"
+      android:label="@string/camera_demo_label"/>
+    <activity
+      android:name="com.explovia.mapdemo.CircleDemoActivity"
+      android:label="@string/circle_demo_label"/>
+    <activity
+      android:name="com.explovia.mapdemo.EventsDemoActivity"
+      android:label="@string/events_demo_label"/>
+    <activity
+      android:name="com.explovia.mapdemo.GroundOverlayDemoActivity"
+      android:label="@string/ground_overlay_demo_label"/>
+    <activity
+      android:name="com.explovia.mapdemo.LayersDemoActivity"
+      android:label="@string/layers_demo_label"/>
+    <activity
+      android:name="com.explovia.mapdemo.LocationSourceDemoActivity"
+      android:label="@string/location_source_demo_label"/>
+    <activity
+      android:name="com.explovia.mapdemo.MapInPagerDemoActivity"
+      android:label="@string/map_in_pager_demo_label"/>
+    <activity
+      android:name="com.explovia.mapdemo.MarkerDemoActivity"
+      android:label="@string/marker_demo_label"/>
+    <activity
+      android:name="com.explovia.mapdemo.MultiMapDemoActivity"
+      android:label="@string/multi_map_demo_label"/>
+    <activity
+      android:name="com.explovia.mapdemo.MyLocationDemoActivity"
+      android:label="@string/my_location_demo_label"/>
+    <activity
+      android:name="com.explovia.mapdemo.OptionsDemoActivity"
+      android:label="@string/options_demo_label"/>
+    <activity
+      android:name="com.explovia.mapdemo.PolygonDemoActivity"
+      android:label="@string/polygon_demo_label"/>
+    <activity
+      android:name="com.explovia.mapdemo.PolylineDemoActivity"
+      android:label="@string/polyline_demo_label"/>
+    <activity
+      android:name="com.explovia.mapdemo.ProgrammaticDemoActivity"
+      android:label="@string/programmatic_demo_label"/>
+    <activity
+      android:name="com.explovia.mapdemo.RawMapViewDemoActivity"
+      android:label="@string/raw_map_view_demo_label"/>
+    <activity
+      android:name="com.explovia.mapdemo.RetainMapDemoActivity"
+      android:label="@string/retain_map_demo_label"/>
+    <activity
+      android:name="com.explovia.mapdemo.SaveStateDemoActivity"
+      android:label="@string/save_state_demo_label"/>
+    <activity
+      android:name="com.explovia.mapdemo.SnapshotDemoActivity"
+      android:label="@string/snapshot_demo_label"/>
+    <activity
+      android:name="com.explovia.mapdemo.TileCoordinateDemoActivity"
+      android:label="@string/tile_coordinate_demo_label"/>
+    <activity
+      android:name="com.explovia.mapdemo.TileOverlayDemoActivity"
+      android:label="@string/tile_overlay_demo_label"/>
+    <activity
+      android:name="com.explovia.mapdemo.UiSettingsDemoActivity"
+      android:label="@string/ui_settings_demo_label"/>
+    <activity
+      android:name="com.explovia.mapdemo.VisibleRegionDemoActivity"
+      android:label="@string/visible_region_demo_label"/>
+  </application>
+</manifest>
